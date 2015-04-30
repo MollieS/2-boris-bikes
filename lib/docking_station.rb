@@ -1,9 +1,10 @@
 class DockingStation
 	def release_bike
-		raise "Docking station empty"
+		fail "Docking station empty" unless @bike
+		@bike
 	end
 
 	def dock bike
-
+		@bike = bike
 	end
 end
