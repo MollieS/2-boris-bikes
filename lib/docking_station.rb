@@ -1,5 +1,9 @@
 class DockingStation
 	def release_bike
-		Bike.new
+		raise "Docking station empty"
+	end
+
+	def dock bike
+
 	end
 end
